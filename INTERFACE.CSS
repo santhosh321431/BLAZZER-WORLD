@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a {
+  text-decoration: none;   /* remove underline */
+  color: inherit;          /* optional: use parent color */
+}
+
+a:visited,
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;   /* prevent underline on all states */
+  color: inherit;          /* or set your own color */
+}
+
+html,
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.main{
+  overflow: hidden;
+  background-image: fixed;
+}
+
+.nav{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.nav-part-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav img{
+    height: 80px;
+    width: auto;
+    margin-right: 60px;
+    cursor: pointer;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url("interface/banner.jpg") no-repeat center center/cover;
+  position: relative;
+  color: white; /* text stays white */
+  height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;   /* covers entire page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background: rgba(0,0,0,0.5); /* dark overlay */
+  backdrop-filter: blur(1px);  /* blur effect */
+  z-index: -1;  /* keep it behind text */
+}
+
+
+.nav-part-1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    
+   
+}
+.nav-part-1 li{
+    background-color:black;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+
+}
+
+.nav-part-1 ul li{
+    margin-right: 40px;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: x-large;
+    
+}
+
+.nav-part-2 i{
+    margin-right: 40px;
+    font-size: 21px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+}
+
+.content{
+    height: calc(100% - 110px);
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.content-left{
+    height: 100%;
+    width: 40%;
+    padding: 80px 100px;
+}
+
+.content-left h5{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.content-left h1{
+    font-size: 55px;
+    text-transform: uppercase;
+    color:white;
+    margin-bottom: 25px;
+}
+
+.content-left p{
+    font-size: 20px;
+    color: white;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background-color:yellow;
+    color:black;
+    font-size: 15px;
+    padding: 12px 40px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+}
+
+.content-right{
+    height: 100%;
+    width: 60%;
+    padding: 45px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.content-right::-webkit-scrollbar{
+    
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.product{
+    height: 430px;
+    width: 230px;
+    background-color: black;
+    position: relative;
+    
+    
+    display: inline-block;
+    margin-right: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 20px 15px 0px orange;
+    transition: 500ms
+    
+}
+.product>p:hover{
+      filter: brightness(1.04);
+   transform: scale(1.5);
+   text-align: center;
+}
+
+.product img{
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    bottom: 20%;
+    
+}
+
+.product P {
+   padding: 10px;
+   color: yellow;
+}
+
+.catagory{
+    position: absolute;
+    bottom: 20%;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.color{
+    position: absolute;
+    bottom: 15%;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.price{
+    font: 18px;
+    position: absolute;
+    bottom: 5%;
+    font-weight: 600;
+    text-transform: capitalize;
+}

@@ -1,0 +1,211 @@
+*{
+    
+    margin: 0;
+    cursor: pointer;  
+    
+    
+}
+
+a {
+  text-decoration: none;   /* remove underline */
+  color: inherit;          /* optional: use parent color */
+}
+
+a:visited,
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;   /* prevent underline on all states */
+  color: inherit;          /* or set your own color */
+}
+
+
+.hii{
+    overflow: hidden;
+}
+.nav{
+    height: 80px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color:black;  
+    overflow: hidden; 
+    position: sticky;
+    top: 0;
+}
+
+.nav-part-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.nav-part-1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.nav-part-1 ul li{
+    margin-right: 45px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-part-2 i{
+    margin-left: 40px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-part-1 li{
+    box-shadow: 2px 4px 4px 3px blue;
+    padding:8px;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.nav-part-1 h1{
+    margin-right: 50px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.nav li:hover{
+    transform: scale(1.10);
+    background-position: 10px;
+}
+.nav-part-2 i:hover{
+     transform: scale(1.10);
+   
+}
+.second{
+    overflow: hidden;
+}
+.second>img{
+    margin: 0%;
+    background-size: cover;
+    box-shadow: 0px 12px 10px 12px black;   
+}
+.second>img:hover{
+   filter: brightness(1.08);
+   transform: scale(1);
+}
+.search{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+   overflow: hidden;
+}
+.search>img{
+    justify-content: center;
+    box-shadow: 0px 7px 1px 0px orangered;
+    transition: 400ms;
+                   
+}
+.search nav{
+    background-color:beige;
+    border: black 2px solid;
+    height: 30px;
+    width: 70px;
+    padding: 15px;
+    margin-right: 250px; 
+    margin-top: 30px;
+    box-shadow: 5px 20px 10px 0px black;
+    transition: 500ms;  
+    border-radius: 20px; 
+    text-align: center;
+    overflow: hidden;
+}
+select{
+    background-color:beige ;
+    padding: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    box-shadow: 0px 10px 7px 0px black;
+    transition: 400ms;
+    border-radius: 20px;   
+    overflow: hidden;
+    padding: 15px;
+    margin-left: 250px;    
+    
+}
+
+.search>img:hover{
+    
+    transform: scale(1.04);
+
+}
+
+
+.product{
+   width: 100%;
+   padding: 10px;
+   display: flex;
+   flex-wrap: wrap;   
+   justify-content: center;
+   overflow: hidden;
+}
+.box{
+    overflow: hidden;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+    margin: 12px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 5px 20px 10px 0px black;
+    transition: 500ms;
+    
+}
+.box>p{
+    font-size: small;
+    color: red;
+    
+}
+:hover>p{
+    background-color: black;
+    color:yellow;
+    font-size: medium;
+}
+:hover.box{
+   filter: brightness(1.04);
+   transform: scale(1.10);
+   text-align: center;
+}
+.about{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;  
+}
+
+    
+.about h2,h4,br{
+    padding: 5px;
+    margin: 20px;
+    align-items: center; 
+    justify-content: space-between;
+   
+}
+.about h4{
+    color:white;
+    ;
+}
+.about h2{
+    color: yellow;
+}    
+
+
